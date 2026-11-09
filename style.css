@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    padding: 16px;
+    background-color: rgb(8, 153, 153);
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.maquina{
+    max-width: 548px;
+    margin: 0 auto;
+    padding: 18px 12px;
+    background-color: rgb(93, 94, 94);
+    border-radius: 12px;
+    color: rgb(17, 17, 17);
+    border: 2px solid red;
+    box-shadow: 2px 2px 16px 12px black;
+}
+
+h1 {
+    font: 700 22px "Courier New", monospace;
+    font-size: 14px;
+    margin: 0 0 14px;
+    color: #d1ad57;
+    text-align: center;
+}
+
+.dica {
+    text-align: center;
+    font-size: 14px;
+    margin: 0 0 14px;
+}
+
+.janelas {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.janelas input {
+    width: 54px;
+    height: 54px;
+    font-size: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    font:  700 22px "Courier New" monospace;
+    background-color: rgb(0, 86, 57);
+    color: #d1ad57;
+    border: 3px solid #345fe3;
+    border-radius: 6px;
+}
+
+.fileira {
+    display: flex;
+    justify-content: center;
+}
+
+.lampada, .tecla {
+    width: min(8.6vw, 42px);
+    height: min(8.6vw, 42px);
+    box-sizing: border-box;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font: 700 16px "Courier New", monospace;
+}
+.lampada {
+    background-color: black;
+    color: #5b5444;
+    border: 2px solid #5b5444;
+    transition: all .15s;
+}
+
+.lampada.acesa {
+    background-color: #d1ad57;
+    color: #232a31;
+    border-color: white;
+    box-shadow:  0 0 14px 5px rgba(255,201,77, .8);
+}
